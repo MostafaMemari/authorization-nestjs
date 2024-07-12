@@ -16,16 +16,28 @@ export class UserEntity {
 
   @Column({ nullable: true })
   first_name: string;
+
   @Column({ nullable: true })
   last_name: string;
+
+  @Column({ nullable: true })
+  email: string;
+
+  @Column({ nullable: true })
+  password: string;
+
   @Column()
   mobile: string;
+
   @Column({ default: false })
   mobile_verify: boolean;
+
   @CreateDateColumn()
   created_at: Date;
+
   @UpdateDateColumn()
   updated_at: Date;
+
   @Column({ nullable: true })
   otpId: number;
 
